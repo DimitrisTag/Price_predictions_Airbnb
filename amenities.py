@@ -64,6 +64,7 @@ df.loc[df['amenities'].str.contains('Luggage dropoff allowed'), 'luggage_dropof_
 
 df = df.iloc[:,26:]
 df = df.replace(np.nan, 0)
+df.to_csv('data/amenities_columns.csv')
 
 
 
