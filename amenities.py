@@ -63,7 +63,6 @@ df.loc[df['amenities'].str.contains('Cable TV'), 'cable_tv'] = 1
 df.loc[df['amenities'].str.contains('Luggage dropoff allowed'), 'luggage_dropof_allowed'] = 1
 
 df = df.iloc[:,26:]
-
 df = df.replace(np.nan, 0)
 
 
