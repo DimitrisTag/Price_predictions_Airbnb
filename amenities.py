@@ -7,7 +7,8 @@ Created on Sat Apr  3 20:42:45 2021
 
 import numpy as np
 import pandas as pd
-df = pd.read_csv('listings.csv')
+
+df = pd.read_csv('data/listings.csv')
 
 df = df[['host_response_time','host_response_rate','host_acceptance_rate', 'host_is_superhost', 'host_identity_verified' ,'neighbourhood_cleansed','room_type', 'accommodates', 'bathrooms_text', 'bedrooms','beds', 'amenities', 'price',
        'minimum_nights', 'maximum_nights', 'has_availability', 'number_of_reviews', 'review_scores_rating', 'review_scores_accuracy',
