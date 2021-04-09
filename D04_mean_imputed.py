@@ -9,7 +9,7 @@ from xgboost import XGBRegressor
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 
-df = pd.read_csv('ListingsClean.csv')
+df = pd.read_csv('ListingsFinal.csv')
 df.drop(['Unnamed: 0', 'balcony'],axis='columns', inplace=True)
 
 y = (df['price'])
