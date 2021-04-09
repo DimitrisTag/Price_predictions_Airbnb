@@ -13,18 +13,18 @@ Code Run :
 
 2) Preprocessing 
     
-    1) Mean Imputed 
+    1) Mean Imputed (Missing values filled with mean, median, mode)
     Step 1 : Run amenities.py to generate the "amenities_columns.csv" in folder 'project_data'
     Step 2 : Run D03_Notebook_Mean_Imputed.ipynb to preprocess the data and generate "ListingsFinal.csv"
     
-    2) KNN Imputed 
+    2) KNN Imputed (Missing values filled with KNN Imputer)
     Step 1 : Run amenities.py to generate the "amenities_columns.csv" in folder 'project_data'
-    Step 2 : Run D03_Notebook_KNN.ipynb to preprocess the data and generate "ListingsFinal.csv"
+    Step 2 : Run D03_Notebook_KNN.ipynb to preprocess the data and generate "knn_imputed.csv"
     
 3) Modeling 
     
-    Step 1 : 
-    Step 2 : Run D03_Notebook.ipynb to preprocess the data and generate "ListingsFinal.csv"
+    Step 1 : Run D04_mean_imputed.py for results of 10 fold cross-validation on "ListingsFinal.csv" 
+    Step 2 : Run D04_KNN_imputed.py to results of 10 fold cross-validation on "knn_imputed.csv"
     
     
 -------------------------------------------------------------------------------------------------- 
